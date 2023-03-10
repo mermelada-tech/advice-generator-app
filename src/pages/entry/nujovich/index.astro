@@ -1,12 +1,12 @@
 ---
-import { AdviceGenerator } from "./components/AdviceGenerator";
-import { getAdvice } from "./util/getAdvice";
+import { AdviceGenerator } from './components/AdviceGenerator'
+import { getAdvice } from './util/getAdvice'
 
 const advice = await getAdvice();
 ---
 
 <div>
-    <h1 class="nujovich-title">Advice Generator app</h1>
+    <h1 className='nujovich-title'>Advice Generator app</h1>
 	<AdviceGenerator client:load advice={advice}/>
 </div>
 

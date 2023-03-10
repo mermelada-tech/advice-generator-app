@@ -10,17 +10,18 @@ module.exports = {
   overrides: [
     {
       files: ['*.astro'],
-      parser: 'astro-eslint-parser',
-      rules: {
-        'astro/no-set-html-directive': 'error'
-      }
+      parser: 'astro-eslint-parser'
     }
   ],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module'
   },
+  plugins: [
+    'react'
+  ],
   rules: {
+    'react/react-in-jsx-scope': 'off',
     'react/prop-types': 'off',
     'no-unused-vars': 'warn',
     'space-before-function-paren': 'off',
