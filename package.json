@@ -4,7 +4,6 @@
   "version": "0.0.1",
   "scripts": {
     "lint": "eslint src/** --fix",
-    "stylelint": "stylelint --fix",
     "commit": "cz",
     "dev": "astro dev",
     "start": "astro dev",
@@ -40,7 +39,7 @@
     "eslint-plugin-n": "^15.6.1",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.32.2",
-    "stylelint": "^15.2.0"
+    "lint-staged": "^13.2.0"
   },
   "config": {
     "commitizen": {
@@ -49,7 +48,6 @@
   },
   "lint-staged": {
     "*.{astro,cjs,js,jsx,mjs}": "eslint --cache --fix",
-    "*.css": "stylelint --cache --fix",
     "*": "prettier --cache --ignore-unknown --write"
   }
 }
