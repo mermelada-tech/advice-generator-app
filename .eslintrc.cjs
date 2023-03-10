@@ -21,6 +21,7 @@ module.exports = {
     sourceType: 'module'
   },
   rules: {
+    'react/prop-types': 'off',
     'no-unused-vars': 'warn',
     'space-before-function-paren': 'off',
     'no-tabs': 'off',
