@@ -1,33 +1,33 @@
 ---
-import { AdviceGenerator } from './components/AdviceGenerator'
+import { AdviceGenerator } from '../../../components/nujovich/AdviceGenerator'
 import { getAdvice } from './util/getAdvice'
 
 const advice = await getAdvice();
 ---
 
 <div>
-    <h1 className='nujovich-title'>Advice Generator app</h1>
-	<AdviceGenerator client:load advice={advice}/>
+  <h1 className='nujovich-title'>Advice Generator app</h1>
+  <AdviceGenerator client:load advice={advice} />
 </div>
 
 <style>
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
 
-    :root {
-        font-family: "Space Mono", monospace;
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  :root {
+    font-family: "Space Mono", monospace;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .nujovich-title {
-        font-size: 2rem;
-        text-align: center;
-        margin-bottom: 2rem;
-    }
+  .nujovich-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
 </style>
