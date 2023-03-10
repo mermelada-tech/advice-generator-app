@@ -15,10 +15,23 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "astro": "^2.0.18",
+    "@astrojs/preact": "^2.1.0",
+    "@astrojs/react": "^2.1.0",
+    "@astrojs/solid-js": "^2.1.0",
+    "@astrojs/svelte": "^2.1.0",
+    "@astrojs/vue": "^2.1.0",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "astro": "^2.1.2",
     "astro-eslint-parser": "^0.12.0",
     "husky": "^8.0.3",
-    "prettier": "^2.8.4"
+    "preact": "^10.13.1",
+    "prettier": "^2.8.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "solid-js": "^1.6.13",
+    "svelte": "^3.56.0",
+    "vue": "^3.2.47"
   },
   "devDependencies": {
     "eslint": "^8.35.0",
