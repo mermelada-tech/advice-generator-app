@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { getAdvice } from '../../pages/entry/nujovich/util/getAdvice'
-import '../styles/main.css'
+import './styles/main.css'
 
 export const AdviceGenerator = ({ advice }) => {
   const [response, setResponse] = useState(advice)
