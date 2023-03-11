@@ -1,0 +1,39 @@
+.wayaba-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #8ec1d6;
+  border-radius: 0.575rem;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  color: #f8fafc;
+}
+
+.wayaba-title {
+  margin-top: 1rem;
+  margin-bottom: 0px;
+}
+
+.wayaba-advice {
+  margin: 1rem;
+  background-color: #3d4b5f;
+  border-radius: 0.575rem;
+  padding: 1rem;
+}
+
+.wayaba-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wayaba-button {
+  padding: 1rem;
+  color: #f8fafc;
+  border-color: #635e79;
+  border-radius: 0.5rem;
+  background-color: #635e79;
+}
