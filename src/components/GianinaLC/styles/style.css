@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.gianina-container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(245, 159, 228);
+}
+
+.gianina-title {
+  color: rgb(36, 28, 28);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.gianina-gen-color {
+  width: 255px;
+  height: 255px;
+}
+
+.gianina-color-p {
+  font-size: 18px;
+  margin: 2rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+}
