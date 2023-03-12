@@ -47,7 +47,7 @@
     }
   },
   "lint-staged": {
-    "*.{astro,cjs,js,jsx,mjs}": "eslint --cache --fix",
+    "*.{cjs,js,jsx,mjs}": "eslint --cache --fix",
     "*": "prettier --cache --ignore-unknown --write"
   }
 }
