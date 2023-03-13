@@ -1,0 +1,84 @@
+---
+const { showAll = false } = Astro.props;
+
+const MAX_ITEMS = 50;
+
+async function getAllParticipants() {
+  const items = await Astro.glob("../pages/entry/*/index.astro");
+
+  return items
+    .map((item) => item.url.slice(item.url.lastIndexOf("/") + 1))
+    .sort(new Intl.Collator("es").compare);
+}
+
+const participants = await getAllParticipants();
+
+const shownParticipants = showAll
+  ? participants
+  : participants.slice(0, MAX_ITEMS);
+---
+
+<style>
+  .participants-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .participants-list {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .participants-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .participants-list li {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background: #cbd5e1;
+    color: #fff;
+    padding: 1rem;
+    width: 80px;
+  }
+
+  .participants-list img {
+    border-radius: 4px;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    background: #fff;
+  }
+</style>
+
+<div class="participants">
+  <h2 class="participants-title">
+    {participants.length} Participants
+  </h2>
+  <div class="participants-list">
+    <ul>
+      {
+        shownParticipants.map((name) => (
+          <li key={name}>
+            <a href={"/entry/" + name}>
+              <img
+                loading="lazy"
+                src={"https://unavatar.io/github/" + name}
+                alt={name}
+              />
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</div>
