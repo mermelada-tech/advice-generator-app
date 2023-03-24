@@ -50,4 +50,3 @@
     "*.{astro,cjs,js,jsx,mjs}": "eslint --cache --fix",
     "*": "prettier --cache --ignore-unknown --write"
   },
-}
