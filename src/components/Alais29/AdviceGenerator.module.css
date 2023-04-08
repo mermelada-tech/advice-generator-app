@@ -1,0 +1,24 @@
+:root {
+  --color-primary: #252525;
+  --color-secondary: #554064;
+  --color-tertiary: #e3b5ff;
+  --font-color: #dadada;
+}
+
+html * {
+  padding: 0;
+  margin: 0;
+  font-family: 'ubuntu-regular';
+  box-sizing: border-box;
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  padding: 1.3rem;
+  background-color: var(--color-primary);
+  color: var(--font-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

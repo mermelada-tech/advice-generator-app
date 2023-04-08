@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "ubuntu-bold";
+  src: local("Ubuntu-Bold"),
+  url("/fonts/Ubuntu/Ubuntu-Bold.ttf") format("truetype");
+  font-weight: bolder;
+}
+@font-face {
+  font-family: "ubuntu-light";
+  src: local("Ubuntu-Light"),
+  url("/fonts/Ubuntu/Ubuntu-Light.ttf") format("truetype");
+  font-weight: light;
+}
+@font-face {
+  font-family: "ubuntu-medium";
+  src: local("Ubuntu-Medium"),
+  url("/fonts/Ubuntu/Ubuntu-Medium.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "ubuntu-regular";
+  src: local("Ubuntu-Regular"),
+  url("/fonts/Ubuntu/Ubuntu-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
