@@ -1,0 +1,20 @@
+.card-btn {
+  background-color: var(--color-tertiary);
+  border: none;
+  padding: 0.8rem 1rem;
+  border-bottom-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: lighter;
+  cursor: pointer;
+  transition: filter 0.2s ease-in-out;
+}
+
+.card-btn:hover {
+  filter: brightness(90%)
+}
+
+.card-btn:active {
+  filter: brightness(75%)
+}
