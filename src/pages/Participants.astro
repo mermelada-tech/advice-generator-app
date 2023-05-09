@@ -4,7 +4,7 @@ const { showAll = false } = Astro.props;
 const MAX_ITEMS = 50;
 
 async function getAllParticipants() {
-  const items = await Astro.glob("../pages/entry/*/index.astro");
+  const items = await Astro.glob ("../pages/entry/*/index.astro");
 
   return items
     .map((item) => item.url.slice(item.url.lastIndexOf("/") + 1))
@@ -19,53 +19,59 @@ const shownParticipants = showAll
 ---
 
 <style>
+  .participants{
+    width:100%;
+    height:auto;
+  }
+  .greet{
+    font-size:3em;
+    margin:6rem;
+  }
   .participants-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align:center;
+    margin-top:5rem;
+    margin-bottom:1rem;
+    font-size:2rem;
   }
-  .participants-list {
-    margin-top: 1rem;
+
+  .participants-list{
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: auto;
+    position:absolute; 
+    z-index: 1; 
   }
 
-  .participants-list ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
+  .participants-list-type{
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
   }
 
-  .participants-list li {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    background: #cbd5e1;
-    color: #fff;
-    padding: 1rem;
-    width: 80px;
+  .participants-list-type li{
+    width:20rem;
+    height:20rem;
+    box-shadow: 6px 5px 25px black;
+    border-radius:100%;
+    background-color: #cbd5e1;
+    padding:.2rem;
+    overflow:hidden;
+    z-index:1;
   }
 
-  .participants-list img {
-    border-radius: 4px;
-    width: 100%;
-    display: block;
-    object-fit: cover;
-    background: #fff;
+  .participants-list-type img{
+    width:100%;
+    border-radius:100%;
   }
+ 
 </style>
 
 <div class="participants">
+  <h1 class="greet"> Hola,Somos MERMELADA TECH!👋</h1>
   <h2 class="participants-title">
     {participants.length} Participants
   </h2>
   <div class="participants-list">
-    <ul>
+    <ul class="participants-list-type">
       {
         shownParticipants.map((name) => (
           <li key={name}>

@@ -1,0 +1,120 @@
+
+<style is:global>
+
+  @font-face {
+    font-family: 'brandFont';
+    src:url("/assets/font/A DAY WITHOUT SUN.otf")
+        format('opentype');
+  }
+
+  header{
+    width:100vw;
+    height:36em;
+    margin-top:0;
+    padding-top:0;
+    background: url(/assets/cover.png);
+    background-size: cover;
+    overflow: hidden; 
+  }
+
+  .logo{
+    position:fixed;
+    width:6rem;
+    height:6rem;
+    margin:8px;
+    border-radius:100%;
+  }
+  .navbar{
+    width: 48%;
+    float: right;
+    margin-right:5rem;
+  }
+  .nav-list{
+    display: flex;
+    position: fixed;
+    justify-content:space-between;
+    float:inline-end;
+    
+  }
+  .nav-item{
+    padding:.5rem;
+    margin-top:1rem;
+    margin-left:2rem;
+    list-style: none;
+    border:.8px solid rgb(93, 5, 145);
+    border-radius:48px;
+  }
+  .nav-item:hover,.nav-link:hover {
+    background:linear-gradient(225deg, #784BA0 0%, #2B86C5 50%, #FF3CAC 100%);
+    color:white;
+  }
+
+  .nav-link{
+    display: block;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color:black;
+  }
+  .brand{
+    text-align: center;
+    margin: auto;
+    margin-top: 5em;
+    color:white;
+    line-height: 4em;
+    padding:8rem;
+  }
+
+  .brand-name{
+    display:inline;
+    font-family: 'brandFont';
+    font-size:13rem;
+    letter-spacing: .5rem;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+
+  .clip{
+    width:7rem;
+    height:12rem;
+    transform:rotate(15deg);
+    position: absolute;
+    top: 8rem;
+    margin-left:2rem;
+  }
+
+  .brand-tag{
+    font-size:1.8rem;
+    font-family:'Inter', sans-serif;
+    font-size:4rem;
+    overflow:hidden;
+  }
+
+  /**animation */
+  @keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff;
+  }
+  to {
+    text-shadow:0 0 30px #ff4da6;
+  }
+  
+}
+</style>
+
+<header>
+  <img class="logo" src="/assets/logo.png" alt="brand logo" />
+  <nav class='navbar'>
+    <ul class='nav-list'>
+      <li class='nav-item'><a class="nav-link" href="#">Nosotras</a></li>
+      <li class='nav-item'><a class="nav-link" href="#">Eventos</a></li>
+      <li class='nav-item'><a class="nav-link" href="#">Proyectos</a></li>
+      <li class='nav-item'><a class="nav-link" href="#">Contacto</a></li>
+    </ul>
+  </nav>
+  <div class="brand">
+    <h1 class="brand-name">MERMELADA TECH
+       <img class="clip" src="/assets/brandClip.png" />
+    </h1>
+    <p class="brand-tag">Creando comunidad de mujeres en tecnologia</p>
+  </div>
+</header>
+
