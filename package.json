@@ -50,17 +50,3 @@
     "*.{astro,cjs,js,jsx,mjs}": "eslint --cache --fix",
     "*": "prettier --cache --ignore-unknown --write"
   },
-  "description": "Necesitarás tener instalado [Visual Studio Code](https://code.visualstudio.com/download), [Node.js 16+](https://nodejs.org/en/download/) y la extensión de Astro, la puedes encontrar [aquí](https://marketplace.visualstudio.com/items?itemName=astro-build.astro-vscode)",
-  "main": "svelte.config.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/amelia2802/advice-generator-app.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/amelia2802/advice-generator-app/issues"
-  },
-  "homepage": "https://github.com/amelia2802/advice-generator-app#readme"
-}
